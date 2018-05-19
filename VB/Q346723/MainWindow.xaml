@@ -1,0 +1,29 @@
+﻿<Window x:Class="Q346723.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:dxn="http://schemas.devexpress.com/winfx/2008/xaml/navbar"
+        Title="MainWindow" Height="350" Width="525">
+    <Window.Resources>
+        <Style TargetType="dxn:NavBarGroup">
+            <Setter Property="Header" Value="{Binding Header}"/>
+            <Setter Property="ItemsSource" Value="{Binding Items}"/>
+        </Style>
+        <Style TargetType="dxn:NavBarItem">
+            <Setter Property="Content" Value="{Binding}"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding Content.Header}" Background="Black" Foreground="Yellow"/>
+                    </DataTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <dxn:NavBarControl ItemsSource="{Binding}">
+            <dxn:NavBarControl.View>
+                <dxn:NavigationPaneView/>
+            </dxn:NavBarControl.View>
+        </dxn:NavBarControl>
+    </Grid>
+</Window>
