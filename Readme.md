@@ -2,7 +2,7 @@
 *Files to look at*:
 
 * [MainWindow.xaml](./CS/Q346723/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/Q346723/MainWindow.xaml))
-* [MainWindow.xaml.cs](./CS/Q346723/MainWindow.xaml.cs) (VB: [MainWindow.xaml](./VB/Q346723/MainWindow.xaml))
+* [MainWindow.xaml.cs](./CS/Q346723/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/Q346723/MainWindow.xaml.vb))
 <!-- default file list end -->
 # How to generate groups and items via ItemsSource
 
